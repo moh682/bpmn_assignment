@@ -1,0 +1,20 @@
+{
+  "name": "bpmn_assignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:listener": "node ./worker.js",
+    "start:camunda": "docker run -p 8080:8080 camunda/camunda-bpm-platform:latest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "camunda-external-task-client-js": "^2.0.0",
+    "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
+    "open": "^7.3.0"
+  }
+}
